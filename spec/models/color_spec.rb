@@ -28,7 +28,7 @@ RSpec.describe Color do
 
   context 'When finding the color\'s family' do
     new_color = Color.random_hex
-    color_anchors = Color::COLOR_ANCHORS.map {|a| a.keys[0]}
+    color_anchors = Color::COLOR_ANCHORS.map { |a| a.keys[0] }
     family, relative_color = Color.find_color_family(new_color)
 
     it 'will return a string' do
