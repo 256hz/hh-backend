@@ -4,8 +4,9 @@ class ColorsController < ApplicationController
     render json: @colors
   end
 
-  def show
-    @color = Color.find(params[:id])
-    render json: @color
+  def generate
+    Color.generate(params[:amount].to_i)
+    @colors = Color.all
+    render json: @colors
   end
 end

@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Color model holds color name constants and color family picking methods
 class Color < ApplicationRecord
   ORANGE = 'orange'
   BROWN = 'brown'
@@ -9,32 +12,34 @@ class Color < ApplicationRecord
   GRAY = 'gray'
 
   ABSOLUTE_COLORS = {
-      [6, 4, 2] => ORANGE,  [5, 3, 1] => ORANGE,
+    [6, 4, 2] => ORANGE,  [5, 3, 1] => ORANGE,  [6, 5, 2] => ORANGE,
+    [6, 5, 3] => ORANGE,  [5, 3, 2] => ORANGE,  [5, 4, 2] => ORANGE,
 
-      [4, 2, 1] => BROWN,   [2, 1, 0] => BROWN,
+    [4, 2, 1] => BROWN,   [3, 2, 1] => BROWN,   [2, 1, 0] => BROWN,
+    [4, 2, 0] => BROWN,   [3, 2, 0] => BROWN,
 
-      [4, 2, 6] => PURPLE,  [4, 2, 4] => PURPLE,  [3, 1, 5] => PURPLE,
-      [3, 1, 3] => PURPLE,  [2, 0, 4] => PURPLE,
+    [4, 2, 6] => PURPLE,  [4, 2, 4] => PURPLE,  [3, 1, 5] => PURPLE,
+    [3, 1, 3] => PURPLE,  [2, 0, 4] => PURPLE,
+    
+    [0, 0, 0] => GRAY,    [1, 1, 1] => GRAY,    [2, 2, 2] => GRAY,
+    [3, 3, 3] => GRAY,    [4, 4, 4] => GRAY,    [5, 5, 5] => GRAY,
+    [6, 6, 6] => GRAY,
 
-      [2, 0, 0] => RED,     [3, 1, 1] => RED,     [4, 2, 2] => RED,
-      [5, 3, 3] => RED,     [6, 4, 4] => RED,
-      [4, 0, 0] => RED,     [6, 2, 2] => RED,     [6, 0, 0] => RED,
+    [2, 2, 0] => YELLOW,  [3, 3, 1] => YELLOW,  [4, 4, 2] => YELLOW,
+    [5, 5, 3] => YELLOW,  [6, 6, 4] => YELLOW,
+    [4, 4, 0] => YELLOW,  [6, 6, 2] => YELLOW,  [6, 6, 0] => YELLOW,
 
-      [2, 2, 0] => YELLOW,  [3, 3, 1] => YELLOW,  [4, 4, 2] => YELLOW,
-      [5, 5, 3] => YELLOW,  [6, 6, 4] => YELLOW,
-      [4, 4, 0] => YELLOW,  [6, 6, 2] => YELLOW,  [6, 6, 0] => YELLOW,
+    [2, 0, 0] => RED,     [3, 1, 1] => RED,     [4, 2, 2] => RED,
+    [5, 3, 3] => RED,     [6, 4, 4] => RED,
+    [4, 0, 0] => RED,     [6, 2, 2] => RED,     [6, 0, 0] => RED,
 
-      [0, 2, 0] => GREEN,   [1, 3, 1] => GREEN,   [2, 4, 2] => GREEN,
-      [3, 5, 3] => GREEN,   [4, 6, 4] => GREEN,
-      [0, 4, 0] => GREEN,   [2, 6, 2] => GREEN,   [0, 6, 0] => GREEN,
+    [0, 2, 0] => GREEN,   [1, 3, 1] => GREEN,   [2, 4, 2] => GREEN,
+    [3, 5, 3] => GREEN,   [4, 6, 4] => GREEN,
+    [0, 4, 0] => GREEN,   [2, 6, 2] => GREEN,   [0, 6, 0] => GREEN,
 
-      [0, 0, 2] => BLUE,    [1, 1, 3] => BLUE,    [2, 2, 4] => BLUE,
-      [3, 3, 5] => BLUE,    [4, 4, 6] => BLUE,
-      [0, 0, 4] => BLUE,    [2, 2, 6] => BLUE,    [0, 0, 6] => BLUE,
-
-      [0, 0, 0] => GRAY,    [1, 1, 1] => GRAY,    [2, 2, 2] => GRAY,
-      [3, 3, 3] => GRAY,    [4, 4, 4] => GRAY,    [5, 5, 5] => GRAY,
-      [6, 6, 6] => GRAY
+    [0, 0, 2] => BLUE,    [1, 1, 3] => BLUE,    [2, 2, 4] => BLUE,
+    [3, 3, 5] => BLUE,    [4, 4, 6] => BLUE,
+    [0, 0, 4] => BLUE,    [2, 2, 6] => BLUE,    [0, 0, 6] => BLUE,
   }
 
   def self.normalize_color(hex_color)
@@ -61,6 +66,14 @@ class Color < ApplicationRecord
     end
     relative_color = [r, g, b]
     [closest_color, relative_color]
+  end
+
+  def self.generate(amount)
+    amount.times do
+      color_value = SecureRandom.hex(3)
+      color_family, relative_color = find_color_family(color_value)
+      create!(hex: color_value, family: color_family, relative_color: relative_color.to_s)
+    end
   end
 
 end
