@@ -4,3 +4,4 @@ Rails.application.routes.draw do
 
   get 'generate/:amount', to: 'colors#generate'
 end
+

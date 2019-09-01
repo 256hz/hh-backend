@@ -77,5 +77,4 @@ class Color < ApplicationRecord
       create!(hex: color_value, family: color_family, relative_color: relative_color.to_s)
     end
   end
-
 end
