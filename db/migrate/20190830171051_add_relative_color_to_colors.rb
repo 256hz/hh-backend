@@ -28,7 +28,7 @@
 
   <meta name="viewport" content="width=device-width">
   
-  <title>hh-backend/routes.rb at master · 256hz/hh-backend</title>
+  <title>hh-backend/20190830171051_add_relative_color_to_colors.rb at master · 256hz/hh-backend</title>
     <meta name="description" content="Code challenge. Contribute to 256hz/hh-backend development by creating an account on GitHub.">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
   <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
@@ -38,10 +38,10 @@
     <meta property="og:image" content="https://avatars3.githubusercontent.com/u/46080343?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="256hz/hh-backend" /><meta property="og:url" content="https://github.com/256hz/hh-backend" /><meta property="og:description" content="Code challenge. Contribute to 256hz/hh-backend development by creating an account on GitHub." />
 
   <link rel="assets" href="https://github.githubassets.com/">
-  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6NDI0NjQ2Nzg1OjM0ZDMyOWUwYTBmZWI3ODA4YTI3OTNlNzg2MzdlYjIxNGQyMDVjZWM1NTZiMmUyYzIzMzVlZTJjNDkyMTFmY2Y=--8f5073797c291f795c0b5ec9c557ab1385af6758">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6NDI0NjQ2Nzg1OjA2MTUxZjgyYmFmNjMyMmU1MDYwNmNkNGY1YTAzMDE1Mjc3NjZhZjk3OTNjZjRhYWIwMzZlMjY0Yzc4ZDMxZWI=--aee7a02944162f720ea5f2c163d06cf21deb102f">
   <meta name="pjax-timeout" content="1000">
   <link rel="sudo-modal" href="/sessions/sudo_modal">
-  <meta name="request-id" content="F271:5B23:5024CE:7A4967:5D6C4022" data-pjax-transient>
+  <meta name="request-id" content="C2AA:6BB3:33D7DF:4EFB89:5D6C3FC5" data-pjax-transient>
 
 
   
@@ -52,7 +52,7 @@
     <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
     <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
 
-  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="F271:5B23:5024CE:7A4967:5D6C4022" /><meta name="octolytics-dimension-region_edge" content="sea" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-dimension-ga_id" content="" class="js-octo-ga-id" /><meta name="octolytics-dimension-visitor_id" content="4118145027289992497" /><meta name="octolytics-actor-id" content="46080343" /><meta name="octolytics-actor-login" content="256hz" /><meta name="octolytics-actor-hash" content="63bbb14f230537188696fb558cf2e35571af909536944390a1cb74840988b926" />
+  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="C2AA:6BB3:33D7DF:4EFB89:5D6C3FC5" /><meta name="octolytics-dimension-region_edge" content="sea" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-dimension-ga_id" content="" class="js-octo-ga-id" /><meta name="octolytics-dimension-visitor_id" content="4118145027289992497" /><meta name="octolytics-actor-id" content="46080343" /><meta name="octolytics-actor-login" content="256hz" /><meta name="octolytics-actor-hash" content="63bbb14f230537188696fb558cf2e35571af909536944390a1cb74840988b926" />
 <meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" />
 
 
@@ -71,7 +71,7 @@
     <meta name="user-login" content="256hz">
 
       <meta name="expected-hostname" content="github.com">
-    <meta name="js-proxy-site-detection-payload" content="M2IyMmFkY2M5NWRjZTRjZDY5YTU4ZTVkOGZhNzA3NWE5ZGQ1YzMzZDEzNzBkOWJjZDhiZTRiZDIxY2YyMjQ0ZHx7InJlbW90ZV9hZGRyZXNzIjoiNzMuMjM5LjE1Ni4yMjAiLCJyZXF1ZXN0X2lkIjoiRjI3MTo1QjIzOjUwMjRDRTo3QTQ5Njc6NUQ2QzQwMjIiLCJ0aW1lc3RhbXAiOjE1NjczNzU0MDEsImhvc3QiOiJnaXRodWIuY29tIn0=">
+    <meta name="js-proxy-site-detection-payload" content="Nzg1NDQ4MDBmMWIxYzA1MDQxNTg3NDcwY2QzN2YyNjlhYTc4YTNjNmFmZWMyNzE5ZGMwNWUxZjBjM2FlNzZhMnx7InJlbW90ZV9hZGRyZXNzIjoiNzMuMjM5LjE1Ni4yMjAiLCJyZXF1ZXN0X2lkIjoiQzJBQTo2QkIzOjMzRDdERjo0RUZCODk6NUQ2QzNGQzUiLCJ0aW1lc3RhbXAiOjE1NjczNzUzNTMsImhvc3QiOiJnaXRodWIuY29tIn0=">
 
     <meta name="enabled-features" content="ACTIONS_V2_ON_MARKETPLACE,MARKETPLACE_FEATURED_BLOG_POSTS,MARKETPLACE_INVOICED_BILLING,MARKETPLACE_SOCIAL_PROOF_CUSTOMERS,MARKETPLACE_TRENDING_SOCIAL_PROOF,MARKETPLACE_RECOMMENDATIONS,MARKETPLACE_PENDING_INSTALLATIONS,NOTIFY_ON_BLOCK,RELATED_ISSUES,GHE_CLOUD_TRIAL">
 
@@ -87,7 +87,7 @@
   <meta name="octolytics-dimension-user_id" content="46080343" /><meta name="octolytics-dimension-user_login" content="256hz" /><meta name="octolytics-dimension-repository_id" content="205252992" /><meta name="octolytics-dimension-repository_nwo" content="256hz/hh-backend" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="205252992" /><meta name="octolytics-dimension-repository_network_root_nwo" content="256hz/hh-backend" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false" />
 
 
-    <link rel="canonical" href="https://github.com/256hz/hh-backend/blob/master/config/routes.rb" data-pjax-transient>
+    <link rel="canonical" href="https://github.com/256hz/hh-backend/blob/master/db/migrate/20190830171051_add_relative_color_to_colors.rb" data-pjax-transient>
 
 
   <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
@@ -159,7 +159,7 @@
           aria-autocomplete="list"
           aria-controls="jump-to-results"
           aria-label="Search or jump to…"
-          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=rz+4B6mdIpZAW4MSA6YBFWNHcwpuOzJZb7QN5XAlWiBWx94rGKM9Asma90uim69RPAEOZhR+ow5zhl5MeWQDFg=="
+          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=NbENZq1DfYcqWYlffVdur6n5h5VwcK6AwJpNtV+SemrMSWtKHH1iE6OY/QbcasDr9r/6+Qo1P9fcqB4cVtMjXA=="
           spellcheck="false"
           autocomplete="off"
           >
@@ -312,7 +312,7 @@
       <img class="avatar" height="20" width="20" alt="@256hz" src="https://avatars2.githubusercontent.com/u/46080343?s=60&amp;v=4" />
       256hz
 </a>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="AKndMFQyfoHqdwWneldEtexV1mwdz0byDn3d4/mKcfrhR4fm8TwVoSDfaJMMshhEeqsZ+BKL9Em4LR9ZfqqqHw==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="15twcPosa5/rowhx4QX2YFQ8+dQ4zl8YbdVLaMLo7G42dSqmXyIAvyELZUWX4KqRwsI2QDeK7aPbhYnSRcg3iw==" />
       <button type="submit" class="Header-link mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15 d-lg-none btn-link d-block width-full text-left" data-ga-click="Header, sign out, icon:logout" style="padding-left: 2px;">
         <svg class="octicon octicon-sign-out v-align-middle" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 9V7H8V5h4V3l4 3-4 3zm-2 3H6V3L2 1h8v3h1V1c0-.55-.45-1-1-1H1C.45 0 0 .45 0 1v11.38c0 .39.22.73.55.91L6 16.01V13h4c.55 0 1-.45 1-1V8h-1v4z"/></svg>
         Sign out
@@ -407,7 +407,7 @@
   " data-team-hovercards-enabled>
   <details class="js-user-status-details details-reset details-overlay details-overlay-dark">
     <summary class="btn-link btn-block link-gray no-underline js-toggle-user-status-edit toggle-user-status-edit "
-      role="menuitem" data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:46080343,&quot;target&quot;:&quot;EDIT_USER_STATUS&quot;,&quot;user_id&quot;:46080343,&quot;client_id&quot;:&quot;958830357.1562987825&quot;,&quot;originating_request_id&quot;:&quot;F271:5B23:5024CE:7A4967:5D6C4022&quot;,&quot;originating_url&quot;:&quot;https://github.com/256hz/hh-backend/blob/master/config/routes.rb&quot;,&quot;referrer&quot;:&quot;https://github.com/256hz/hh-backend/tree/master/config&quot;}}" data-hydro-click-hmac="239c505c150fe7dc6b641db2bdde9ea821f63ca551d7f7fd72e247fdb723ebc8">
+      role="menuitem" data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:46080343,&quot;target&quot;:&quot;EDIT_USER_STATUS&quot;,&quot;user_id&quot;:46080343,&quot;client_id&quot;:&quot;958830357.1562987825&quot;,&quot;originating_request_id&quot;:&quot;C2AA:6BB3:33D7DF:4EFB89:5D6C3FC5&quot;,&quot;originating_url&quot;:&quot;https://github.com/256hz/hh-backend/blob/master/db/migrate/20190830171051_add_relative_color_to_colors.rb&quot;,&quot;referrer&quot;:&quot;https://github.com/256hz/hh-backend/tree/master/db/migrate&quot;}}" data-hydro-click-hmac="fb0607a0921faacf1b0b93117a1c42168270ead954e2b60200bfbf3314059fc0">
       <div class="d-flex">
         <div class="f6 lh-condensed user-status-header
           d-inline-block v-align-middle
@@ -434,7 +434,7 @@
       </div>
     </summary>
     <details-dialog class="details-dialog rounded-1 anim-fade-in fast Box Box--overlay" role="dialog" tabindex="-1">
-      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="position-relative flex-auto js-user-status-form" action="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="1Q+fNeD2VAmwV5YJrYTbNS4ifNY6eetM3NIpUZ7iRz/uvVObLFrOCdUXNbb5J6d8k9C0t5KUeHgLKS60DoLc7g==" />
+      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="position-relative flex-auto js-user-status-form" action="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="nF5Of2gc8QxGzqa2X11w3d7o6CHf6mWTmHQHuMgaAben7ILRpLBrDCOOBQkL/gyUYxogQHcH9qdPjwBdWHqaZg==" />
         <div class="Box-header bg-gray border-bottom p-3">
           <button class="Box-btn-octicon js-toggle-user-status-edit btn-octicon float-right" type="reset" aria-label="Close dialog" data-close-dialog>
             <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
@@ -554,17 +554,17 @@
       </li>
       <li class="dropdown-divider" role="none"></li>
         <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 30 minutes" value="2019-09-01T15:33:21-07:00">
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 30 minutes" value="2019-09-01T15:32:33-07:00">
             in 30 minutes
           </button>
         </li>
         <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 1 hour" value="2019-09-01T16:03:21-07:00">
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 1 hour" value="2019-09-01T16:02:33-07:00">
             in 1 hour
           </button>
         </li>
         <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 4 hours" value="2019-09-01T19:03:21-07:00">
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 4 hours" value="2019-09-01T19:02:33-07:00">
             in 4 hours
           </button>
         </li>
@@ -616,7 +616,7 @@
     <div role="none" class="dropdown-divider"></div>
     <a role="menuitem" class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">Help</a>
     <a role="menuitem" class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">Settings</a>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="bsnQMo+kMTKxmN0wrQcIE4yrvK08w+wHSGO+5SfgIsWPJ4rkKqpaEnswsATb4lTiGlVzOTOHXrz+M3xfoMD5IA==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="I51iXr38IGxv4kBD9c+jDtuqdH9s/ICJs/RvJQSZEg/CcziIGPJLTKVKLXeDKv//TVS762O4MjIFpK2fg7nJ6g==" />
       
       <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout" role="menuitem">
         Sign out
@@ -668,10 +668,10 @@
 
   <li>
     
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="clearfix js-social-form js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="WUe/+IVxpGs6mVopiTmmN9s3gCU6swUUsKhqdTxSYeFn/DLFR5nQGgUwgbhJjFxNpvrf3yOL15Zy5oi7ap4QZw==" />      <input type="hidden" name="repository_id" value="205252992">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="clearfix js-social-form js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="VBZM0j87jJaJHptF+Wb3RYIW8fxfU4/Gvu6j16bGbHNqrcHv/dP457a3QNQ50w0//9uuBkZrXUR8oEEZ8Aod9Q==" />      <input type="hidden" name="repository_id" value="205252992">
 
       <details class="details-reset details-overlay select-menu float-left">
-        <summary class="select-menu-button float-left btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;WATCH_BUTTON&quot;,&quot;repository_id&quot;:205252992,&quot;client_id&quot;:&quot;958830357.1562987825&quot;,&quot;originating_request_id&quot;:&quot;F271:5B23:5024CE:7A4967:5D6C4022&quot;,&quot;originating_url&quot;:&quot;https://github.com/256hz/hh-backend/blob/master/config/routes.rb&quot;,&quot;referrer&quot;:&quot;https://github.com/256hz/hh-backend/tree/master/config&quot;,&quot;user_id&quot;:46080343}}" data-hydro-click-hmac="78b725d5a49035cde4505f1511d0587cb186d95518101a63bfd989e205b8e5f1" data-ga-click="Repository, click Watch settings, action:blob#show">          <span data-menu-button>
+        <summary class="select-menu-button float-left btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;WATCH_BUTTON&quot;,&quot;repository_id&quot;:205252992,&quot;client_id&quot;:&quot;958830357.1562987825&quot;,&quot;originating_request_id&quot;:&quot;C2AA:6BB3:33D7DF:4EFB89:5D6C3FC5&quot;,&quot;originating_url&quot;:&quot;https://github.com/256hz/hh-backend/blob/master/db/migrate/20190830171051_add_relative_color_to_colors.rb&quot;,&quot;referrer&quot;:&quot;https://github.com/256hz/hh-backend/tree/master/db/migrate&quot;,&quot;user_id&quot;:46080343}}" data-hydro-click-hmac="6629d04e98fc8911ddee8cd00da808c1d560439369680408101c71b92552b48f" data-ga-click="Repository, click Watch settings, action:blob#show">          <span data-menu-button>
               <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
               Unwatch
           </span>
@@ -742,18 +742,18 @@
 
   <li>
       <div class="js-toggler-container js-social-container starring-container ">
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/256hz/hh-backend/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="CIzTbprYTqSYnG35+1048iIbAVx9N9eF4yz+VNUOmEvSz0x5RSSbxk6UIbLiGhLZ7kkI2h9Fp1k2iUeWRM3DZQ==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/256hz/hh-backend/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="XQRwfUzRWx/dxbilmeeiXhvm9iHMeSA0XGeDwL2FUIKHR+9qky2OfQvN9O6AoIh117T/p64LUOiJwjoCLEYLrA==" />
       <input type="hidden" name="context" value="repository"></input>
-      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Unstar 256hz/hh-backend" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:205252992,&quot;client_id&quot;:&quot;958830357.1562987825&quot;,&quot;originating_request_id&quot;:&quot;F271:5B23:5024CE:7A4967:5D6C4022&quot;,&quot;originating_url&quot;:&quot;https://github.com/256hz/hh-backend/blob/master/config/routes.rb&quot;,&quot;referrer&quot;:&quot;https://github.com/256hz/hh-backend/tree/master/config&quot;,&quot;user_id&quot;:46080343}}" data-hydro-click-hmac="c8331158d570eebcf1da5b120da0880d2e1690af1f18f283f1c8c79b180c3ee2" data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Unstar 256hz/hh-backend" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:205252992,&quot;client_id&quot;:&quot;958830357.1562987825&quot;,&quot;originating_request_id&quot;:&quot;C2AA:6BB3:33D7DF:4EFB89:5D6C3FC5&quot;,&quot;originating_url&quot;:&quot;https://github.com/256hz/hh-backend/blob/master/db/migrate/20190830171051_add_relative_color_to_colors.rb&quot;,&quot;referrer&quot;:&quot;https://github.com/256hz/hh-backend/tree/master/db/migrate&quot;,&quot;user_id&quot;:46080343}}" data-hydro-click-hmac="0da7f815f568ba77d6bbaed8c7971e894a1bfa9284b19a252b2b0d7f63f357ff" data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
         Unstar
 </button>        <a class="social-count js-social-count" href="/256hz/hh-backend/stargazers"
            aria-label="0 users starred this repository">
            0
         </a>
 </form>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/256hz/hh-backend/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="iLQOcXNLwPIdekfJ4vFc2rVnfWCk8zGu15FNUpVbg/FG8iqQR/4z/ODQ+WeWonRdaWKgZsMGj0dPnfrIXURhJA==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/256hz/hh-backend/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="RB8N+eMZgCBr+b7HZMxtwWFaay5hgTysoee4mXTqL4aKWSkY16xzLpZTAGkQn0VGvV+2KAZ0gkU56w8DvPXNUw==" />
       <input type="hidden" name="context" value="repository"></input>
-      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Star 256hz/hh-backend" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:205252992,&quot;client_id&quot;:&quot;958830357.1562987825&quot;,&quot;originating_request_id&quot;:&quot;F271:5B23:5024CE:7A4967:5D6C4022&quot;,&quot;originating_url&quot;:&quot;https://github.com/256hz/hh-backend/blob/master/config/routes.rb&quot;,&quot;referrer&quot;:&quot;https://github.com/256hz/hh-backend/tree/master/config&quot;,&quot;user_id&quot;:46080343}}" data-hydro-click-hmac="d3fe68b1ccfed7e30db5424deaf78871fc561bba16c9880fb955da2101d2016d" data-ga-click="Repository, click star button, action:blob#show; text:Star">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Star 256hz/hh-backend" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:205252992,&quot;client_id&quot;:&quot;958830357.1562987825&quot;,&quot;originating_request_id&quot;:&quot;C2AA:6BB3:33D7DF:4EFB89:5D6C3FC5&quot;,&quot;originating_url&quot;:&quot;https://github.com/256hz/hh-backend/blob/master/db/migrate/20190830171051_add_relative_color_to_colors.rb&quot;,&quot;referrer&quot;:&quot;https://github.com/256hz/hh-backend/tree/master/db/migrate&quot;,&quot;user_id&quot;:46080343}}" data-hydro-click-hmac="b58bd3ca502ae3dff1be9131ae075f89fc7f4904f474951b634c6e3c021077fe" data-ga-click="Repository, click star button, action:blob#show; text:Star">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
         Star
 </button>        <a class="social-count js-social-count" href="/256hz/hh-backend/stargazers"
            aria-label="0 users starred this repository">
@@ -765,7 +765,7 @@
 
   <li>
           <details class="details-reset details-overlay details-overlay-dark d-inline-block float-left">
-            <summary class="btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FORK_BUTTON&quot;,&quot;repository_id&quot;:205252992,&quot;client_id&quot;:&quot;958830357.1562987825&quot;,&quot;originating_request_id&quot;:&quot;F271:5B23:5024CE:7A4967:5D6C4022&quot;,&quot;originating_url&quot;:&quot;https://github.com/256hz/hh-backend/blob/master/config/routes.rb&quot;,&quot;referrer&quot;:&quot;https://github.com/256hz/hh-backend/tree/master/config&quot;,&quot;user_id&quot;:46080343}}" data-hydro-click-hmac="46e6c874b6ad8ab87abe64d4873e6b276b8992b2f1ab3662901a71dbe3a402bd" data-ga-click="Repository, show fork modal, action:blob#show; text:Fork" title="Fork your own copy of 256hz/hh-backend to your account">              <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+            <summary class="btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FORK_BUTTON&quot;,&quot;repository_id&quot;:205252992,&quot;client_id&quot;:&quot;958830357.1562987825&quot;,&quot;originating_request_id&quot;:&quot;C2AA:6BB3:33D7DF:4EFB89:5D6C3FC5&quot;,&quot;originating_url&quot;:&quot;https://github.com/256hz/hh-backend/blob/master/db/migrate/20190830171051_add_relative_color_to_colors.rb&quot;,&quot;referrer&quot;:&quot;https://github.com/256hz/hh-backend/tree/master/db/migrate&quot;,&quot;user_id&quot;:46080343}}" data-hydro-click-hmac="63661cfd09cd3f1a0946979345f2422cfbe345a581032e869f25de8457b3f8e8" data-ga-click="Repository, show fork modal, action:blob#show; text:Fork" title="Fork your own copy of 256hz/hh-backend to your account">              <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
               Fork
 </summary>            <details-dialog
               class="anim-fade-in fast Box Box--overlay d-flex flex-column"
@@ -923,9 +923,9 @@
   
 
 
-    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/256hz/hh-backend/blob/2971650fbabd3d7c3cc6e1057c0700111ef6d22d/config/routes.rb">Permalink</a>
+    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/256hz/hh-backend/blob/2971650fbabd3d7c3cc6e1057c0700111ef6d22d/db/migrate/20190830171051_add_relative_color_to_colors.rb">Permalink</a>
 
-    <!-- blob contrib key: blob_contributors:v21:40654018ffb0549bfce28b13ac3d8a77 -->
+    <!-- blob contrib key: blob_contributors:v21:a571f8865900f62c5f66caf6a0d56e1b -->
       
 
     <div class="d-flex flex-items-start flex-shrink-0 pb-3 flex-column flex-md-row">
@@ -939,7 +939,7 @@
     <span class="css-truncate-target" data-menu-button>master</span>
   </summary>
 
-  <details-menu class="select-menu-modal hx_rsm-modal position-absolute" style="z-index: 99;" src="/256hz/hh-backend/ref-list/master/config/routes.rb?source_action=show&amp;source_controller=blob" preload>
+  <details-menu class="select-menu-modal hx_rsm-modal position-absolute" style="z-index: 99;" src="/256hz/hh-backend/ref-list/master/db/migrate/20190830171051_add_relative_color_to_colors.rb?source_action=show&amp;source_controller=blob" preload>
     <include-fragment class="select-menu-loading-overlay anim-pulse">
       <svg height="32" class="octicon octicon-octoface" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M14.7 5.34c.13-.32.55-1.59-.13-3.31 0 0-1.05-.33-3.44 1.3-1-.28-2.07-.32-3.13-.32s-2.13.04-3.13.32c-2.39-1.64-3.44-1.3-3.44-1.3-.68 1.72-.26 2.99-.13 3.31C.49 6.21 0 7.33 0 8.69 0 13.84 3.33 15 7.98 15S16 13.84 16 8.69c0-1.36-.49-2.48-1.3-3.35zM8 14.02c-3.3 0-5.98-.15-5.98-3.35 0-.76.38-1.48 1.02-2.07 1.07-.98 2.9-.46 4.96-.46 2.07 0 3.88-.52 4.96.46.65.59 1.02 1.3 1.02 2.07 0 3.19-2.68 3.35-5.98 3.35zM5.49 9.01c-.66 0-1.2.8-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.54-1.78-1.2-1.78zm5.02 0c-.66 0-1.2.79-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.53-1.78-1.2-1.78z"/></svg>
     </include-fragment>
@@ -953,13 +953,13 @@
                 data-hotkey="t">
             Find file
           </a>
-          <clipboard-copy value="config/routes.rb" class="btn btn-sm BtnGroup-item">
+          <clipboard-copy value="db/migrate/20190830171051_add_relative_color_to_colors.rb" class="btn btn-sm BtnGroup-item">
             Copy path
           </clipboard-copy>
         </div>
       </span>
       <h2 id="blob-path" class="breadcrumb flex-auto min-width-0 text-normal flex-md-self-center ml-md-2 mr-md-3 my-2 my-md-0">
-        <span class="js-repo-root text-bold"><span class="js-path-segment"><a data-pjax="true" href="/256hz/hh-backend"><span>hh-backend</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/256hz/hh-backend/tree/master/config"><span>config</span></a></span><span class="separator">/</span><strong class="final-path">routes.rb</strong>
+        <span class="js-repo-root text-bold"><span class="js-path-segment"><a data-pjax="true" href="/256hz/hh-backend"><span>hh-backend</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/256hz/hh-backend/tree/master/db"><span>db</span></a></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/256hz/hh-backend/tree/master/db/migrate"><span>migrate</span></a></span><span class="separator">/</span><strong class="final-path">20190830171051_add_relative_color_to_colors.rb</strong>
       </h2>
 
       <div class="BtnGroup flex-shrink-0 d-none d-md-inline-block">
@@ -969,7 +969,7 @@
               data-hotkey="t">
           Find file
         </a>
-        <clipboard-copy value="config/routes.rb" class="btn btn-sm BtnGroup-item">
+        <clipboard-copy value="db/migrate/20190830171051_add_relative_color_to_colors.rb" class="btn btn-sm BtnGroup-item">
           Copy path
         </clipboard-copy>
       </div>
@@ -977,7 +977,7 @@
 
 
 
-    <include-fragment src="/256hz/hh-backend/contributors/master/config/routes.rb" class="Box Box--condensed commit-loader">
+    <include-fragment src="/256hz/hh-backend/contributors/master/db/migrate/20190830171051_add_relative_color_to_colors.rb" class="Box Box--condensed commit-loader">
       <div class="Box-body bg-blue-light f6">
         Fetching contributors&hellip;
       </div>
@@ -996,35 +996,35 @@
 <div class="Box-header py-2 d-flex flex-column flex-shrink-0 flex-md-row flex-md-items-center">
 
   <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
-      7 lines (5 sloc)
+      6 lines (5 sloc)
       <span class="file-info-divider"></span>
-    211 Bytes
+    134 Bytes
   </div>
 
   <div class="d-flex py-1 py-md-0 flex-auto flex-order-1 flex-md-order-2 flex-sm-grow-0 flex-justify-between">
 
     <div class="BtnGroup">
-      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/256hz/hh-backend/raw/master/config/routes.rb">Raw</a>
-        <a class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b" href="/256hz/hh-backend/blame/master/config/routes.rb">Blame</a>
-      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/256hz/hh-backend/commits/master/config/routes.rb">History</a>
+      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/256hz/hh-backend/raw/master/db/migrate/20190830171051_add_relative_color_to_colors.rb">Raw</a>
+        <a class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b" href="/256hz/hh-backend/blame/master/db/migrate/20190830171051_add_relative_color_to_colors.rb">Blame</a>
+      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/256hz/hh-backend/commits/master/db/migrate/20190830171051_add_relative_color_to_colors.rb">History</a>
     </div>
 
 
     <div>
             <a class="btn-octicon tooltipped tooltipped-nw"
-               href="x-github-client://openRepo/https://github.com/256hz/hh-backend?branch=master&amp;filepath=config%2Froutes.rb"
+               href="x-github-client://openRepo/https://github.com/256hz/hh-backend?branch=master&amp;filepath=db%2Fmigrate%2F20190830171051_add_relative_color_to_colors.rb"
                aria-label="Open this file in GitHub Desktop"
                data-ga-click="Repository, open with desktop, type:mac">
                 <svg class="octicon octicon-device-desktop" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
             </a>
 
-            <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/256hz/hh-backend/edit/master/config/routes.rb" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="PfoiBbhLzTrbJM3kJSAlPjsMdyzjS0Rd3WA2QlLIKwabXiKS2TEm1tki7oNk+ccS3tXytkp06dnrqu10gAS7wA==" />
+            <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/256hz/hh-backend/edit/master/db/migrate/20190830171051_add_relative_color_to_colors.rb" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="kqoagWY0abzATmw6dGdLxfPLZhR4sGVosDTuAe6uu1EkMp9Y1TPL0OQqNErXRJsY5n14QQGdRiIGqghsyjpf0w==" />
               <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
                 aria-label="Edit this file" data-hotkey="e" data-disable-with>
                 <svg class="octicon octicon-pencil" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
               </button>
 </form>
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/256hz/hh-backend/delete/master/config/routes.rb" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="BXk6+eHiSgoKGoDfd54+KCxf3lptfMa2VSNfB3Wf+EC/efqKvzexe11mzJ/Kfd0/tJY+EzcuU3sO7fBZ+G4y9A==" />
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/256hz/hh-backend/delete/master/db/migrate/20190830171051_add_relative_color_to_colors.rb" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="qDdic71PFTw6CxS3vi2tR4ejPRGgPzhC2CywM4YUkD+tWMUiKerquPNHd1btDC8ATvRXsdjX4qOXB2xFjxqabA==" />
             <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
               aria-label="Delete this file" data-disable-with>
               <svg class="octicon octicon-trashcan" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
@@ -1043,28 +1043,23 @@
 <table class="highlight tab-size js-file-line-container" data-tab-size="8">
       <tr>
         <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
-        <td id="LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">Rails</span>.application.routes.draw <span class="pl-k">do</span></td>
+        <td id="LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-k">class</span> <span class="pl-en">AddRelativeColorToColors<span class="pl-e"> &lt; ActiveRecord::Migration</span></span>[<span class="pl-c1">6.0</span>]</td>
       </tr>
       <tr>
         <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
-        <td id="LC2" class="blob-code blob-code-inner js-file-line">  <span class="pl-c"><span class="pl-c">#</span> For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html</span></td>
+        <td id="LC2" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">def</span> <span class="pl-en">change</span></td>
       </tr>
       <tr>
         <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
-        <td id="LC3" class="blob-code blob-code-inner js-file-line">  root <span class="pl-s"><span class="pl-pds">&#39;</span>colors#index<span class="pl-pds">&#39;</span></span></td>
+        <td id="LC3" class="blob-code blob-code-inner js-file-line">    add_column <span class="pl-c1">:colors</span>, <span class="pl-c1">:relative_color</span>, <span class="pl-c1">:string</span></td>
       </tr>
       <tr>
         <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
-        <td id="LC4" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC4" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">end</span></td>
       </tr>
       <tr>
         <td id="L5" class="blob-num js-line-number" data-line-number="5"></td>
-        <td id="LC5" class="blob-code blob-code-inner js-file-line">  get <span class="pl-s"><span class="pl-pds">&#39;</span>generate/:amount<span class="pl-pds">&#39;</span></span>, <span class="pl-c1">to:</span> <span class="pl-s"><span class="pl-pds">&#39;</span>colors#generate<span class="pl-pds">&#39;</span></span></td>
-      </tr>
-      <tr>
-        <td id="L6" class="blob-num js-line-number" data-line-number="6"></td>
-        <td id="LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-k">end</span></td>
+        <td id="LC5" class="blob-code blob-code-inner js-file-line"><span class="pl-k">end</span></td>
       </tr>
 </table>
 
@@ -1076,7 +1071,7 @@
       <ul class="BlobToolbar-dropdown dropdown-menu dropdown-menu-se mt-2" style="width:185px">
         <li><clipboard-copy role="menuitem" class="dropdown-item" id="js-copy-lines" style="cursor:pointer;" data-original-text="Copy lines">Copy lines</clipboard-copy></li>
         <li><clipboard-copy role="menuitem" class="dropdown-item" id="js-copy-permalink" style="cursor:pointer;" data-original-text="Copy permalink">Copy permalink</clipboard-copy></li>
-        <li><a class="dropdown-item js-update-url-with-hash" id="js-view-git-blame" role="menuitem" href="/256hz/hh-backend/blame/2971650fbabd3d7c3cc6e1057c0700111ef6d22d/config/routes.rb">View git blame</a></li>
+        <li><a class="dropdown-item js-update-url-with-hash" id="js-view-git-blame" role="menuitem" href="/256hz/hh-backend/blame/2971650fbabd3d7c3cc6e1057c0700111ef6d22d/db/migrate/20190830171051_add_relative_color_to_colors.rb">View git blame</a></li>
           <li><a class="dropdown-item" id="js-new-issue" role="menuitem" href="/256hz/hh-backend/issues/new">Reference in new issue</a></li>
       </ul>
     </details-menu>
@@ -1112,7 +1107,7 @@
 <div class="footer container-lg width-full p-responsive" role="contentinfo">
   <div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
     <ul class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
-      <li class="mr-3 mr-lg-0">&copy; 2019 <span title="0.43353s from unicorn-df776db8-5jrwk">GitHub</span>, Inc.</li>
+      <li class="mr-3 mr-lg-0">&copy; 2019 <span title="0.50084s from unicorn-df776db8-wlkfj">GitHub</span>, Inc.</li>
         <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
         <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
         <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to security, text:security" href="https://github.com/security">Security</a></li>
