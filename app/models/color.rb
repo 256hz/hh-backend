@@ -66,9 +66,13 @@ class Color < ApplicationRecord
     [closest_color, relative_color]
   end
 
+  def self.random_hex
+    SecureRandom.hex(3)
+  end
+
   def self.generate(amount)
     amount.times do
-      color_value = SecureRandom.hex(3)
+      color_value = random_hex
       color_family, relative_color = find_color_family(color_value)
       create!(hex: color_value, family: color_family, relative_color: relative_color.to_s)
     end
