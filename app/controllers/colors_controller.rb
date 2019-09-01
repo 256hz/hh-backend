@@ -6,7 +6,6 @@ class ColorsController < ApplicationController
 
   def generate
     Color.generate(params[:amount].to_i)
-    @colors = Color.all
-    render json: @colors
+    redirect_to '/'
   end
 end

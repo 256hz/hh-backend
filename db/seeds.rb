@@ -1,3 +1,3 @@
 Color.destroy_all
 
-Color.generate(200)
+Color.generate(500)
