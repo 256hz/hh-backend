@@ -16,7 +16,7 @@ class Color < ApplicationRecord
   # Some normalized colors from visual observation
   COLOR_ANCHORS = [
     { ORANGE => [[6, 5, 2], [6, 5, 3], [6, 4, 2], [5, 4, 2], [5, 4, 1], [5, 4, 0],
-                 [5, 3, 1], [5, 3, 2], [5, 2, 0]] },
+                 [5, 3, 1], [5, 3, 2], [5, 2, 0], [4, 3, 0]] },
     { BROWN =>  [[4, 3, 1], [4, 2, 1], [4, 2, 0], [3, 2, 1], [3, 2, 0], [2, 2, 0], 
                  [2, 1, 0], [1, 1, 0]] },
     { PURPLE => [[6, 4, 6], [6, 2, 6], [6, 0, 6], [4, 2, 6], [4, 2, 4], [4, 1, 4],
@@ -24,8 +24,8 @@ class Color < ApplicationRecord
                  [2, 0, 2], [2, 0, 1], [1, 0, 3]] },
     { CYAN =>   [[4, 6, 6], [2, 6, 6], [2, 5, 4], [0, 6, 6], [3, 5, 5], [1, 5, 5],
                  [0, 4, 4], [0, 3, 3], [0, 2, 2], [0, 1, 1]] },
-    { GRAY =>   [[6, 6, 6], [5, 5, 5], [4, 4, 4], [3, 3, 3], [3, 3, 2], [2, 2, 2],
-                 [1, 1, 1], [0, 0, 0]] },
+    # { GRAY =>   [[6, 6, 6], [5, 5, 5], [4, 4, 4], [3, 3, 3], [3, 3, 2], [2, 2, 2],
+    #              [1, 1, 1], [0, 0, 0]] },
     { YELLOW => [[6, 6, 4], [6, 6, 2], [6, 6, 0], [5, 6, 1], [5, 5, 3], [5, 5, 2],
                  [5, 5, 1], [5, 5, 0], [4, 5, 2], [4, 5, 1], [4, 5, 0], [4, 4, 2],
                  [4, 4, 1], [4, 4, 0], [3, 4, 0]] },
@@ -50,9 +50,12 @@ class Color < ApplicationRecord
   end
 
   def self.find_color_family(hex_color)
-    # Iterate through anchor points and assign the name from the point with the 
+    # Iterate through anchor points and assign the name from the point with the
     # shortest distance to the color being sorted.  Return that color's name and
     # the 'relative color' (normalized color)
+    r, g, b, = hex_color[0..1].hex, hex_color[2..3].hex, hex_color[4..5].hex
+    return [GRAY, normalize_color(hex_color)] if [r, g, b].max - [r, g, b].min <= 15
+
     r, g, b = normalize_color(hex_color)
     minimum_distance = [6, 6, 6]
     closest_color = 'not assigned'
