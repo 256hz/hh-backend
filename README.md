@@ -1,24 +1,36 @@
-# README
+### [Live link](http://abes-helpful-demo.herokuapp.com)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Code challenge accepted.
 
-Things you may want to cover:
+### INSTALLATION
 
-* Ruby version
+Clone & ```bundle```
 
-* System dependencies
+This RESTful API was built on Rails 6.0 using Ruby 2.6.3 and a PostgreSQL DB.
 
-* Configuration
+### FUNCTIONS
+- Root (`/`): returns all colors in JSON.
+- `/generate/:amount`: add this many more random colors to the DB.
 
-* Database creation
+### COLOR FILTERING
+I chose to filter the colors on creation, because it only needs to happen once, and this will lessen the load on the browser.  The method I used was pretty hand-coding intensive, because it turns out our mental map of colors doesn't correspond easily to numerical values.
 
-* Database initialization
+I added the 'cyan' category to the original spec because otherwise the line between blue and green was too blurry.
 
-* How to run the test suite
+Color generation happens like this:
+- Generate 3-digit (6 character) random hex number.
+- Parse that number into RGB values.
+- 'Scale down' the RGB values so each number only goes from 0-6 (i.e. `[1, 4, 6]`).
+- Iterate through the COLOR_ANCHORS array, which contains one hash per color category.  The hash's format is `color name: array of anchor colors`.  Check the distance from the anchor points to the RGB value.  Store the name of the color that's closest.
+- Commit to database.
 
-* Services (job queues, cache servers, search engines, etc.)
+### SCHEMA
+Color
+- id:integer
+- hex:string
+- relative_color:string (this is the `[1, 4, 6]` number)
+- family:string
+- created_at / updated_at:datetime
 
-* Deployment instructions
-
-* ...
+### TESTING
+Some preliminary unit tests have been added for the Color class.  These can be run with ```rspec```.  
