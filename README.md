@@ -24,6 +24,8 @@ Color generation happens like this:
 - Iterate through the COLOR_ANCHORS array, which contains one hash per color category.  The hash's format is `color name: array of anchor colors`.  Check the distance from the anchor points to the RGB value.  Store the name of the color that's closest.
 - Commit to database.
 
+It's not perfect, and grays in particular are more like pastels.  But it works pretty well.
+
 ### SCHEMA
 Color
 - id:integer
