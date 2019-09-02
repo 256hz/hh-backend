@@ -2,6 +2,7 @@
 
 # Color model holds color name constants and color family picking methods
 class Color < ApplicationRecord
+  # First, a list of colors
   ORANGE = 'orange'
   BROWN = 'brown'
   PURPLE = 'purple'
@@ -12,6 +13,7 @@ class Color < ApplicationRecord
   BLUE = 'blue'
   GRAY = 'gray'
 
+  # Some normalized colors from visual observation
   COLOR_ANCHORS = [
     { ORANGE => [[6, 5, 2], [6, 5, 3], [6, 4, 2], [5, 4, 2], [5, 4, 1], [5, 4, 0],
                  [5, 3, 1], [5, 3, 2], [5, 2, 0]] },
@@ -39,6 +41,7 @@ class Color < ApplicationRecord
     ].freeze
 
   def self.normalize_color(hex_color)
+    # Convert 0-255 to 0-6 for easier color categorization
     r, g, b, = hex_color[0..1].hex, hex_color[2..3].hex, hex_color[4..5].hex
     r, g, b = [r, g, b].map do |color|
       color / 42
@@ -47,6 +50,9 @@ class Color < ApplicationRecord
   end
 
   def self.find_color_family(hex_color)
+    # Iterate through anchor points and assign the name from the point with the 
+    # shortest distance to the color being sorted.  Return that color's name and
+    # the 'relative color' (normalized color)
     r, g, b = normalize_color(hex_color)
     minimum_distance = [6, 6, 6]
     closest_color = 'not assigned'
@@ -68,10 +74,12 @@ class Color < ApplicationRecord
   end
 
   def self.random_hex
+    # A random, 3-digit (6-char) hex number
     SecureRandom.hex(3)
   end
 
   def self.generate(amount)
+    # Use the above methods to create colors in the DB
     amount.times do
       color_value = random_hex
       color_family, relative_color = find_color_family(color_value)
