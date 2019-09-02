@@ -14,9 +14,9 @@ DB like Mongo, since no relations are required between colors.
 - `/generate/:amount`: add this many more random colors to the DB.
 
 ### COLOR FILTERING
-I chose to filter the colors on creation, because it only needs to happen once, and this lessens the load on the browser.  The method I used was pretty hand-coding intensive, because it turns out our mental map of colors doesn't correspond easily to numerical values.
+I chose to filter the colors on creation, because it only needs to happen once, and this lessens the load on the browser.  The method I used is not maintainable and would need to be replaced by a better translation of colors to values.  It turns out our mental map of colors doesn't correspond to the way we write colors as numbers.
 
-I added the 'cyan' category to the original spec because otherwise the line between blue and green was too blurry.
+I added the 'cyan' category to the original spec because I thought that otherwise the line between blue and green was too blurry.
 
 Color generation happens like this:
 - Generate 3-digit (6 character) random hex number.
