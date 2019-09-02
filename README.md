@@ -6,14 +6,15 @@ Code challenge accepted.
 
 Clone & ```bundle```
 
-This RESTful API was built on Rails 6.0 using Ruby 2.6.3 and a PostgreSQL DB.
+This RESTful API was built on Rails 6.0 using Ruby 2.6.3 and a PostgreSQL DB.  The vast majority of Rails functionality was unused, but Rails is easy to expand on.  If doing this again I would go with a NoSQL
+DB like Mongo, since no relations are required between colors.
 
 ### FUNCTIONS
 - Root (`/`): returns all colors in JSON.
 - `/generate/:amount`: add this many more random colors to the DB.
 
 ### COLOR FILTERING
-I chose to filter the colors on creation, because it only needs to happen once, and this will lessen the load on the browser.  The method I used was pretty hand-coding intensive, because it turns out our mental map of colors doesn't correspond easily to numerical values.
+I chose to filter the colors on creation, because it only needs to happen once, and this lessens the load on the browser.  The method I used was pretty hand-coding intensive, because it turns out our mental map of colors doesn't correspond easily to numerical values.
 
 I added the 'cyan' category to the original spec because otherwise the line between blue and green was too blurry.
 
