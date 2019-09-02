@@ -1,7 +1,7 @@
+# Actions for colors
 class ColorsController < ApplicationController
   def index
-    @colors = Color.all
-    render json: @colors
+    render json: Color.all
   end
 
   def generate
