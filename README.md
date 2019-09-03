@@ -14,7 +14,7 @@ DB like Mongo, since no relations are required between colors.
 - `/generate/:amount`: add this many more random colors to the DB.
 
 ### COLOR FILTERING
-I chose to filter the colors on creation, because it only needs to happen once, and this lessens the load on the browser.  The method I used is not maintainable and would need to be replaced by a better translation of colors to values.  It turns out our mental map of colors doesn't correspond to the way we write colors as numbers.
+I chose to filter the colors on creation, because it only needs to happen once, and this lessens the load on the browser.  The method I used is not super maintainable and should be replaced by a better translation of colors to values.  The HSLuv color scheme seems like a promising direction for a refactor.
 
 I added the 'cyan' category to the original spec because I thought that otherwise the line between blue and green was too blurry.
 
